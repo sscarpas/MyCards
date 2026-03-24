@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">MyCards</string>
+    <string name="action_settings">Settings</string>
+    <!-- Navigation labels -->
+    <string name="first_fragment_label">My Cards</string>
+    <string name="card_detail_label">Card Detail</string>
+    <string name="add_card_label">Adding Card</string>
+    <!-- Card list -->
+    <string name="card_thumbnail_description">Card thumbnail</string>
+    <string name="add_new_card">Add new card</string>
+    <!-- Card detail -->
+    <string name="card_front">Front</string>
+    <string name="card_back">Back</string>
+    <!-- Add card screen -->
+    <string name="card_name_hint">Card name</string>
+    <string name="card_front_image">Card Front</string>
+    <string name="card_back_image_optional">Card Back (optional)</string>
+    <string name="pick_from_gallery">Pick from gallery</string>
+    <string name="take_photo">Take photo</string>
+    <string name="label_pick_gallery">Pick from gallery</string>
+    <string name="label_take_photo">Take a photo</string>
+    <string name="finish">Finish</string>
+    <!-- Photo confirmation dialog -->
+    <string name="confirm_photo_title">Use this photo?</string>
+    <string name="use_this_photo">Use this photo</string>
+    <string name="cancel">Cancel</string>
+    <!-- Camera frame overlay -->
+    <string name="camera_frame_hint">Place card within the frame</string>
+    <!-- Permissions -->
+    <string name="camera_permission_denied">Camera permission is required to take photos</string>
+    <string name="camera_capture_failed">Failed to capture photo</string>
+    <!-- Delete card -->
+    <string name="delete_card">Delete Card</string>
+    <string name="delete_confirm_title">Delete card?</string>
+    <string name="delete_confirm_message">This cannot be undone.</string>
+    <!-- Validation -->
+    <string name="error_card_name_exists">A card with this name already exists</string>
+    <string name="delete">Delete</string>
+    <!-- Edit card -->
+    <string name="edit_card">Edit Card</string>
+    <string name="edit_card_label">Edit Card</string>
+    <string name="save">Save</string>
+    <string name="remove_image">Remove image</string>
+    <!-- Change photo strip (shown beneath preview after a photo is set) -->
+    <string name="change_photo_gallery">Gallery</string>
+    <string name="change_photo_camera">Camera</string>
+    <!-- Settings screen -->
+    <string name="settings_label">Settings</string>
+    <string name="settings_backup_section">Backup &amp; Restore</string>
+    <string name="settings_backup_description">Export your cards to a ZIP file you can store anywhere, or import a previously created backup.</string>
+    <string name="export_backup">Export cards</string>
+    <string name="import_backup">Import cards</string>
+    <string name="export_success">Exported %1$d card(s) successfully</string>
+    <string name="export_failed">Export failed. Please try again.</string>
+    <string name="import_success">Imported %1$d card(s) successfully</string>
+    <string name="import_failed">Import failed. The file may be invalid or corrupted.</string>
+    <string name="import_conflict_title">Conflict: %1$s</string>
+    <string name="import_conflict_message">A card with this name already exists. What would you like to do?</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="skip">Skip</string>
+</resources>

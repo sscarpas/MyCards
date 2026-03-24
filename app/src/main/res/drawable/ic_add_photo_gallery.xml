@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!--
+        Material Design "add_photo_alternate" icon.
+        Sub-path 1: + cross in the top-left corner (the "add" indicator).
+        Sub-path 2: Rectangular image frame.
+        Sub-path 3: Mountain / landscape silhouette inside the frame.
+    -->
+    <path
+        android:fillColor="?attr/colorPrimary"
+        android:pathData="M3,4V1h2v3h3v2H5v3H3V6H0V4h3z
+                          M6,10V7h3V4h11c1.1,0 2,0.9 2,2v12c0,1.1-0.9,2-2,2H5c-1.1,0-2,-0.9-2,-2V10H6z
+                          M15,9l5,7H7l3,-4 2,3z" />
+</vector>
+

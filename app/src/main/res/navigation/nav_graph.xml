@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.mycards.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CardDetailFragment"
+            app:destination="@id/CardDetailFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_AddCardFragment"
+            app:destination="@id/AddCardFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CardDetailFragment"
+        android:name="com.example.mycards.CardDetailFragment"
+        android:label="@string/card_detail_label"
+        tools:layout="@layout/fragment_card_detail">
+
+        <argument
+            android:name="cardId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_CardDetailFragment_to_EditCardFragment"
+            app:destination="@id/EditCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddCardFragment"
+        android:name="com.example.mycards.AddCardFragment"
+        android:label="@string/add_card_label"
+        tools:layout="@layout/fragment_add_card">
+        <action
+            android:id="@+id/action_AddCardFragment_to_CameraFragment"
+            app:destination="@id/CameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditCardFragment"
+        android:name="com.example.mycards.EditCardFragment"
+        android:label="@string/edit_card_label"
+        tools:layout="@layout/fragment_edit_card">
+
+        <argument
+            android:name="cardId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_EditCardFragment_to_CameraFragment"
+            app:destination="@id/CameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CameraFragment"
+        android:name="com.example.mycards.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera">
+
+        <argument
+            android:name="target"
+            app:argType="string" />
+
+        <argument
+            android:name="outputPath"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.mycards.SettingsFragment"
+        android:label="@string/settings_label"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
